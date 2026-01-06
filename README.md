@@ -1,16 +1,75 @@
-# React + Vite
+# MediTrack-One Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of MediTrack-One, a modern healthcare management system.  
+It is built with **React 18, Tailwind CSS, Redux Toolkit**, and **Vite**.  
+The frontend handles **landing animation, hero section, patient and appointment management, and responsive UI**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🏗 Project Structure
 
-## React Compiler
+src/
+├── assets/
+│ ├── images/ # Logo, hero-placeholder, doctors, nurses
+│ └── videos/ # hero.mp4, footer-bg.mp4
+├── components/
+│ ├── common/ # Button, Input, SearchBox
+│ ├── layout/ # Navbar, Footer
+│ ├── sections/ # Hero, About, Services, Doctors, Appointments, Contact
+│ └── landing/ # LandingAnimation
+├── features/
+│ ├── auth/ # LoginForm, RegisterForm, AuthProvider, ProtectedRoute
+│ ├── patients/ # PatientList, PatientDetail, PatientForm
+│ ├── visits/ # VisitList, VisitForm, VisitDetail
+│ ├── appointments/ # AppointmentList, AppointmentForm, AppointmentCalendar
+│ ├── reports/ # ReportList, ReportDetail, ReportForm
+│ └── auditLogs/ # AuditLogList, AuditLogDetail
+├── hooks/ # useAuth, useRole, useFetch, useScroll
+├── services/ # authService, patientService, appointmentService, reportService
+├── store/ # Redux store & slices
+├── routes/ # AppRoutes.jsx
+├── utils/ # themeColors, animationHelpers
+├── App.jsx
+└── main.jsx
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚡ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Landing animation** (3s fade before main page)  
+- **Hero section with background video**  
+- **Footer with background video**  
+- **Responsive sections**: About, Services, Doctors, Appointments, Contact  
+- **Reusable components**: Button, Input, SearchBox  
+- **State management** using **Redux Toolkit**  
+- **Routing** using **React Router v6**  
+- **Hooks**: `useAuth`, `useRole`, `useFetch`, `useScroll`  
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install Dependencies
+
+```bash
+cd frontend
+npm install
+
+🎨 Technologies Used
+
+React 18
+
+Tailwind CSS
+
+Redux Toolkit
+
+React Router v6
+
+Vite
+
+JavaScript (ES6+)
+
+📝 License
+
+MIT License © 2026 MediTrack
+
